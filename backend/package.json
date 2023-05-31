@@ -1,13 +1,9 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
   "main": "Server.js",
   "scripts": {
     "start": "node Server.js"
-  },
-   "engines": {
-    "node": ">=14 <21"
   },
   "author": "",
   "license": "ISC",
@@ -17,5 +13,7 @@
     "express": "^4.18.2",
     "mongoose": "^7.2.1",
     "mongose": "^0.0.2-security"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
