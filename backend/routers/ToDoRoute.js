@@ -5,7 +5,7 @@ const router = Router()
 
 router.get('/', getToDo)
 router.post('/add', saveToDo)
-router.put('/upd', updateToDo)
-router.delete('/dlt', deleteByIdToDo)
+router.post('/update', updateToDo)
+router.post('/delete', deleteByIdToDo)
 
 module.exports = router

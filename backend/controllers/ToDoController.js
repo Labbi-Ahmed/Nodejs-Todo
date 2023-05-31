@@ -14,9 +14,7 @@ module.exports.saveToDo = async (req, res)=>{
     ToDoModel
     .create({text})
     .then((data)=>{
-        console.log("added Successfully....");
-        console.log(data);
-        res.send(data)
+        res.send("Successfully add daot >>>>> "+ data)
     })
 }
 
@@ -34,7 +32,7 @@ module.exports.deleteByIdToDo = async (req, res)=>{
 
     ToDoModel
     .findByIdAndDelete(_id)
-    .then(()=> res
-    .send("Deleted Successfully......."))
+    .then(()=> 
+    res.send("Deleted Successfully......."))
     .catch((err)=>console.log(err))
 }
